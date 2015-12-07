@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# Perform necessary sickbeard setup steps
+# after package is installed.
+#
+
+PROGNAME=$(basename $0)
+
+addgroup --system sickbeard
+adduser --system --home /opt/sickbeard --no-create-home --group sickbeard
+
+chown -R sickbeard: /opt/sickbeard
+
+echo "Thank you for installing sickbeard!"
+
+exit 0

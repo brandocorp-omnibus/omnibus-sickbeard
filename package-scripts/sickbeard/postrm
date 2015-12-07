@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# Perform necessary sickbeard removal steps
+# after package is uninstalled.
+#
+
+echo "sickbeard has been uninstalled!"
+
+exit 0
